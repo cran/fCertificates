@@ -1,7 +1,6 @@
 citHeader("To cite package 'fCertificates' in publications use:")
-desc <- packageDescription("fCertificates")
-year <- sub(".*(2[[:digit:]]{3})-.*", "\\1", desc$Date)
-vers <- paste("R package version", desc$Version)
+year <- sub(".*(2[[:digit:]]{3})-.*", "\\1", meta$Date)
+vers <- paste("R package version", meta$Version)
 citEntry(entry="Manual",
 title = "fCertificates: Basics of Structured Products Valuation",
 author = personList(as.person("Stefan Wilhelm")),

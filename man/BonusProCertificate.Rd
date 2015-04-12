@@ -73,7 +73,7 @@ Haug (2007). The complete Guide to Option Pricing Formulas, \emph{Wiley & Sons},
 
 \examples{
 ## payoff diagram
-S <- seq(50, 130)
+S <- seq(50, 130, by=2)
 p1 <- numeric(length(S))
 p2 <- numeric(length(S))
 for (i in seq(along=S))
@@ -91,7 +91,7 @@ lines(S, p2, lwd=2, col="blue")
 abline(v=c(70, 100), lty=2, col="gray80")
     
 ## example: BonusPro vs. Bonus Certificate
-S <- seq(50, 130)
+S <- seq(50, 130, by=2)
 p1 <- numeric(length(S))
 p2 <- numeric(length(S))
 for (i in seq(along=S))

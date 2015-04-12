@@ -1,3 +1,8 @@
+2015-01-11 (Version 0.5-4)
+--------------------------
+# fixed some issue with CITATION file which could only be read in when the
+package is installed (use package metadata). Now citation() will work without the package being installed.
+
 2014-02-25 (Version 0.5-3)
 --------------------------
 # fixed some issues with the R build process (R CMD build)
